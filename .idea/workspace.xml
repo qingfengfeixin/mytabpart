@@ -1,7 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="96ce9c3e-6bdc-4090-8b3b-ac1c957738a9" name="Default Changelist" comment="" />
+    <list default="true" id="96ce9c3e-6bdc-4090-8b3b-ac1c957738a9" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/go_build_mytabpart.exe" beforeDir="false" afterPath="$PROJECT_DIR$/bin/go_build_mytabpart.exe" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/conf/db.conf" beforeDir="false" afterPath="$PROJECT_DIR$/conf/db.conf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main.go" beforeDir="false" afterPath="$PROJECT_DIR$/src/main.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/models/ufa_cfg_auto_man_tab_part_info.go" beforeDir="false" afterPath="$PROJECT_DIR$/src/model/model.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/services/mytabpart.go" beforeDir="false" afterPath="$PROJECT_DIR$/src/service/mytabpart.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/utils/db.go" beforeDir="false" afterPath="$PROJECT_DIR$/src/dao/dao.go" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -15,7 +23,13 @@
     </option>
   </component>
   <component name="GOROOT" url="file://D:/tmp/Go" />
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
   <component name="ProjectId" id="1lLzDZJ7smvHHfO6z5GieoETDXw" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="1" id="Add" />
+  </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
@@ -53,6 +67,18 @@
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+    <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VgoProject">
     <integration-enabled>true</integration-enabled>

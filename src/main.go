@@ -1,12 +1,10 @@
 package main
 
-import (
-	"mytabpart/services"
-)
+import "mytabpart/service"
 
 func main() {
 
-	var run services.Mytabpart
-	run.PartTab()
+	s := service.NewService()
+	s.Mytabpart()
 
 }
