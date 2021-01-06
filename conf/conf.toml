@@ -1,0 +1,8 @@
+# This is a TOML document. Boom.
+
+title = "mysql conf FILE V1.1"
+
+[mysql]
+driver = "mysql"
+dsn = "root:Aa111111@tcp(192.168.15.196:3306)/dl_20201202?timeout=1s&readTimeout=1s&writeTimeout=1s&parseTime=true&loc=Local&charset=utf8mb4,utf8"
+dbname = "noap"

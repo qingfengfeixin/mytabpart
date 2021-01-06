@@ -3,23 +3,27 @@ package dao
 import (
 	"database/sql"
 	"fmt"
-	"github.com/Unknwon/goconfig"
 	_ "github.com/go-sql-driver/mysql"
+	"mytabpart/conf"
 )
 
 type Dao struct {
-	db *sql.DB
+	c      *conf.Config
+	db     *sql.DB
+	dbname string
 }
 
-func NewDao() *Dao {
-	// mysql
-	dsn, err := getconfig().GetValue("mysql", "dsn")
-	if err != nil {
-		fmt.Println("get mysql cfg value err=", err)
-		return nil
+var err error
+
+func NewDao(c *conf.Config) *Dao {
+	d := &Dao{
+		c: c,
+		dbname:c.Dc.Dbname,
 	}
-	d := new(Dao)
-	d.db, err = sql.Open("mysql", dsn)
+
+	// mysql
+
+	d.db, err = sql.Open(d.c.Dc.Driver, d.c.Dc.Dsn)
 	if err != nil {
 		fmt.Println("connect mysql err=", err)
 		return nil
@@ -28,18 +32,14 @@ func NewDao() *Dao {
 		fmt.Println("mysql db ping err", err)
 		return nil
 	}
+
 	return d
 }
 
-func(d *Dao) close(){
-	d.db.Close()
-}
+func (d *Dao) Close() {
 
-func getconfig() *goconfig.ConfigFile {
-	cfg, err := goconfig.LoadConfigFile("../conf/db.conf")
-	if err != nil {
-		fmt.Println("get cfg file err =", err)
-		return nil
+	if d.db != nil {
+		d.db.Close()
 	}
-	return cfg
+
 }

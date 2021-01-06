@@ -43,7 +43,7 @@ func (d *Dao) Getallparttab() (m []model.UFA_CFG_AUTO_MAN_TAB_PART_INFO) {
 func (d *Dao) GetTabHi(tab string) (high string) {
 
 	row := d.db.QueryRow("select max(TRIM( BOTH '\\'' FROM TRIM(partition_description) ) ) from "+
-		"INFORMATION_SCHEMA.PARTITIONS where table_schema='noap' AND lower(table_name) =?", tab)
+		"INFORMATION_SCHEMA.PARTITIONS where table_schema= ? AND lower(table_name) =?", d.dbname, tab)
 
 	var MaxPart sql.NullString
 
@@ -94,7 +94,7 @@ func (d *Dao) TabParDrop(tab string, rent int) {
 	expire := time.Now().Add(-time.Hour * time.Duration(rent)).Format("20060102")
 
 	sqlstr := "SELECT partition_name FROM INFORMATION_SCHEMA.PARTITIONS " +
-		"WHERE TABLE_SCHEMA = 'noap' AND table_name = ? and SUBSTRING(partition_name, 6)< ?"
+		"WHERE TABLE_SCHEMA = ? AND table_name = ? and SUBSTRING(partition_name, 6)< ?"
 
 	stmt, err := d.db.Prepare(sqlstr)
 	defer stmt.Close()
@@ -102,7 +102,7 @@ func (d *Dao) TabParDrop(tab string, rent int) {
 		fmt.Println(err)
 	}
 
-	rows, err := stmt.Query(tab, expire)
+	rows, err := stmt.Query(d.dbname, tab, expire)
 	defer rows.Close()
 	if err != nil {
 		fmt.Println(err)

@@ -4,11 +4,23 @@
     <list default="true" id="96ce9c3e-6bdc-4090-8b3b-ac1c957738a9" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/bin/go_build_mytabpart.exe" beforeDir="false" afterPath="$PROJECT_DIR$/bin/go_build_mytabpart.exe" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/conf/db.conf" beforeDir="false" afterPath="$PROJECT_DIR$/conf/db.conf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/conf/db.conf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/dao/dao.go" beforeDir="false" afterPath="$PROJECT_DIR$/src/dao/dao.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/dao/ufa_cfg_auto_man_tab_part_info.go" beforeDir="false" afterPath="$PROJECT_DIR$/src/dao/ufa_cfg_auto_man_tab_part_info.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/go.mod" beforeDir="false" afterPath="$PROJECT_DIR$/src/go.mod" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/go.sum" beforeDir="false" afterPath="$PROJECT_DIR$/src/go.sum" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main.go" beforeDir="false" afterPath="$PROJECT_DIR$/src/main.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/models/ufa_cfg_auto_man_tab_part_info.go" beforeDir="false" afterPath="$PROJECT_DIR$/src/model/model.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/services/mytabpart.go" beforeDir="false" afterPath="$PROJECT_DIR$/src/service/mytabpart.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/utils/db.go" beforeDir="false" afterPath="$PROJECT_DIR$/src/dao/dao.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/service/mytabpart.go" beforeDir="false" afterPath="$PROJECT_DIR$/src/service/mytabpart.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/service/service.go" beforeDir="false" afterPath="$PROJECT_DIR$/src/service/service.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/vendor/github.com/Unknwon/goconfig/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/vendor/github.com/Unknwon/goconfig/LICENSE" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/vendor/github.com/Unknwon/goconfig/README.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/vendor/github.com/Unknwon/goconfig/README_ZH.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/vendor/github.com/Unknwon/goconfig/conf.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/vendor/github.com/Unknwon/goconfig/read.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/vendor/github.com/Unknwon/goconfig/util.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/vendor/github.com/Unknwon/goconfig/write.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/vendor/modules.txt" beforeDir="false" afterPath="$PROJECT_DIR$/src/vendor/modules.txt" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />

@@ -6,12 +6,15 @@ import (
 )
 
 func (s *Service) Mytabpart() {
+
 	for i, v := range s.dao.Getallparttab() {
 		fmt.Println(i, v)
 		s.Partadd(v.TABLE_NAME, v.INTER_VAL)
 		s.Partdrop(v.TABLE_NAME, v.RETENTION_HOUR)
 
 	}
+	defer s.dao.Close()
+
 }
 
 func (s *Service) Partadd(tab string, inter int) {
