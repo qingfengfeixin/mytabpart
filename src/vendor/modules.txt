@@ -1,6 +1,0 @@
-# github.com/BurntSushi/toml v0.3.1
-## explicit
-github.com/BurntSushi/toml
-# github.com/go-sql-driver/mysql v1.5.0
-## explicit
-github.com/go-sql-driver/mysql

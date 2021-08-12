@@ -1,8 +1,18 @@
 # This is a TOML document. Boom.
 
-title = "mysql conf FILE V1.1"
+title = "mytabpart v1.0"
+
+# 是否输出到sql脚本 0 -不输出 1 -输出
+isSqlfile = 0
+
+# 是否进行drop操作 0 -不执行 1 -执行
+isDrop = 0
+
+# 如果hidate（分区最大时间）超过一个月，是否从最近一个月开始建立分区 0 - 从最大分区时间开始 1 -从最近一个月开始
+isMon = 0
 
 [mysql]
 driver = "mysql"
-dsn = "root:Aa111111@tcp(192.168.15.196:3306)/dl_20201202?timeout=1s&readTimeout=1s&writeTimeout=1s&parseTime=true&loc=Local&charset=utf8mb4,utf8"
-dbname = "noap"
+# dsn = "root:Aa111111@tcp(192.168.15.196:3306)/dl_20201202?timeout=1s&readTimeout=1s&writeTimeout=1s&parseTime=true&loc=Local&charset=utf8mb4,utf8"
+dsn = "admin:ycig1234@tcp(mysql01-tiisp2020-test.ycigilink.local:3306)/c5web_test?timeout=1s&readTimeout=1s&writeTimeout=1s&parseTime=true&loc=Local&charset=utf8mb4,utf8"
+dbname = "c5web_test"
